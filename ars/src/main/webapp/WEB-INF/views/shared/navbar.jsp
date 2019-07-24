@@ -13,11 +13,11 @@
 	</nav>
 	<nav>
 		<ul id="menu">
-			<li id="menu_active"><a href="index.html">Home</a></li>
-			<li><a href="index-1.html">Our Aircraft</a></li>
-			<li><a href="index-2.html">Safety</a></li>
-			<li><a href="index-3.html">Charters</a></li>
-			<li><a href="index-4.html">Contacts</a></li>
+			<li id="menu_active"><a href="${contextRoot}/home">Home</a></li>
+			<li><a href="${contextRoot}/our-aircraft">Our Aircraft</a></li>
+			<li><a href="${contextRoot}/safety">Safety</a></li>
+			<li><a href="${contextRoot}/charters">Charters</a></li>
+			<li><a href="${contextRoot}/contact">Contacts</a></li>
 		</ul>
 	</nav>
 </div>

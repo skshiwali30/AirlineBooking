@@ -14,7 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title></title>
+<title>Airline Reservation System - ${title}</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="${css}/reset.css" type="text/css"
 	media="all">
@@ -65,6 +65,22 @@
 	<!-- Main Page content -->
 	<c:if test="${userClickHome == true }">
 		<%@include file="home.jsp"%>
+	</c:if>
+	
+	<c:if test="${userClickOurAircraft == true }">
+		<%@include file="ourAircraft.jsp"%>
+	</c:if>
+	
+	<c:if test="${userClickSafety == true }">
+		<%@include file="safety.jsp"%>
+	</c:if>
+	
+	<c:if test="${userClickCharters == true }">
+		<%@include file="charters.jsp"%>
+	</c:if>
+	
+	<c:if test="${userClickContacts == true }">
+		<%@include file="contact.jsp"%>
 	</c:if>
 
 	<!-- Footer -->
