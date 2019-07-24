@@ -11,7 +11,8 @@ public class PageController {
 	public ModelAndView Index()
 	{
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("Greeting", "Welcome to MVC spring framework..");
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 		return mv;
 	}
 }
