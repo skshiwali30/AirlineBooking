@@ -15,6 +15,12 @@
 <html lang="en">
 <head>
 <title>Airline Reservation System - ${title}</title>
+
+<script>
+	window.menu = '${title}';
+</script>
+
+
 <meta charset="utf-8">
 <link rel="stylesheet" href="${css}/reset.css" type="text/css"
 	media="all">
@@ -66,25 +72,28 @@
 	<c:if test="${userClickHome == true }">
 		<%@include file="home.jsp"%>
 	</c:if>
-	
+
 	<c:if test="${userClickOurAircraft == true }">
 		<%@include file="ourAircraft.jsp"%>
 	</c:if>
-	
+
 	<c:if test="${userClickSafety == true }">
 		<%@include file="safety.jsp"%>
 	</c:if>
-	
+
 	<c:if test="${userClickCharters == true }">
 		<%@include file="charters.jsp"%>
 	</c:if>
-	
+
 	<c:if test="${userClickContacts == true }">
 		<%@include file="contact.jsp"%>
 	</c:if>
 
 	<!-- Footer -->
 	<%@include file="./shared/footer.jsp"%>
+	
+	<!-- self coded javascript -->
+	<script src="${js}/myapp.js"></script>
 
 	<script type="text/javascript"> Cufon.now(); </script>
 </body>

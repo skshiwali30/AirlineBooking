@@ -28,7 +28,7 @@ header .right {width:600px}
 #menu {float:left;padding-top:8px;padding-left:5px;width:570px}
 #menu li {float:left;padding-left:1px}
 #menu li a {display:block;font-size:16px;text-transform:uppercase;color:#fff;text-decoration:none;line-height:30px;behavior:url(js/PIE.htc);position:relative;padding:0 20px;margin:1px 0}
-#menu li a:hover, #menu #menu_active a {border-bottom:1px solid #373b40;border-top:1px solid #000;background:#191a1e;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0}
+#menu li a:hover, #menu .menu_active a {border-bottom:1px solid #373b40;border-top:1px solid #000;background:#191a1e;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0}
 #banner {background:url(../images/bg_img2.jpg) 0 0 no-repeat;height:211px;padding:30px 0 0 60px}
 .text1 {font-weight:600;color:#f0f0f0;font-size:50px;line-height:60px;width:330px;letter-spacing:-2px}
 .text1 span {font-size:45px;line-height:50px;display:block;padding-left:80px;margin-top:-12px;font-weight:400;letter-spacing:-2px}
