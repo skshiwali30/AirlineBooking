@@ -53,7 +53,7 @@ public class HibernateConfig {
 		property.put("hibernate.show_sql",true);
 		property.put("hibernate.format_sql", true);
 		
-		return null;
+		return property;
 	}
 	
 	@Bean

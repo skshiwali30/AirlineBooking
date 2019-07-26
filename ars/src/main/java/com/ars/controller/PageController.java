@@ -5,23 +5,23 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ars.backend.dao.FlightInformationDao;
+import com.ars.backend.dao.FlightInfoDao;
+import com.ars.backend.dao.UserLoginDao;
 
 @Controller
 public class PageController {
-
-	@Autowired
-	private FlightInformationDao flightInfo;
 	
+	@Autowired
+	private UserLoginDao userDao;
+	private FlightInfoDao flightDao;
 	
 	@RequestMapping(value= {"/","/home","/index"})
 	public ModelAndView index()
 	{
 		ModelAndView mv = new ModelAndView("page");
 		mv.addObject("title", "Home");
-		
-		//passing list of flight
-		mv.addObject("flightInfoList",flightInfo.list());
+		//passing list of users
+		mv.addObject("users", userDao.list());
 		
 		mv.addObject("userClickHome", true);
 		return mv;
@@ -63,12 +63,16 @@ public class PageController {
 		return mv;
 	}
 	
-	@RequestMapping(value= {"/view-flight"})
-	public ModelAndView viewFlight()
+	//method to show all flights details
+	@RequestMapping(value= {"/show/all/flightDetails"})
+	public ModelAndView showAllFlightDetails()
 	{
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "View Flight");
-		mv.addObject("userClickViewFlight", true);
+		mv.addObject("title", "All Flights");
+		//passing list of users
+		mv.addObject("flights", flightDao.list());
+		
+		mv.addObject("userClickAllFlight", true);
 		return mv;
 	}
 }

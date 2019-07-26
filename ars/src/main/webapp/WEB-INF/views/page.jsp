@@ -40,7 +40,7 @@
 <![endif]-->
 </head>
 <body id="page1">
-	<div class="body1">
+	 <div class="body1">
 		<div class="main">
 			<!-- header -->
 			<header>
@@ -88,6 +88,10 @@
 	<c:if test="${userClickContacts == true }">
 		<%@include file="contact.jsp"%>
 	</c:if>
+	
+	<c:if test="${userClickAllFlight == true }">
+		<%@include file="FlightInfo.jsp"%>
+	</c:if> 
 
 	<!-- Footer -->
 	<%@include file="./shared/footer.jsp"%>

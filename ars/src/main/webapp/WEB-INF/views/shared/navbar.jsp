@@ -17,9 +17,13 @@
 			<li id="safety"><a href="${contextRoot}/safety">Safety</a></li>
 			<li id="charters"><a href="${contextRoot}/charters">Charters</a></li>
 			<li id="contacts"><a href="${contextRoot}/contact">Contacts</a></li>
+			<li id = "flightDetails"><a href="${contextRoot}/show/all/flightDetails">View All Flight</a></li>
 			
-			<c:forEach items="${flightInfoList}" var="details">
-				<li id="viewFlight"><a href="${contextRoot}/view-flight">${details.flightName}</a></li>
+			<c:forEach items="${users}" var="details">
+				<li id="contacts"><a href="${contextRoot}/contact">${details.typeOfUser}</a></li>
+			</c:forEach>
+			<c:forEach items="${flights}" var="details">
+			<li id = "flightDetails"><a href="${contextRoot}/show/all/flightDetails"></a></li>
 			</c:forEach>
 		</ul>
 	</nav>
